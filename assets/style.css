@@ -70,9 +70,12 @@ section {
   padding: 2em;
 }
 
-#about-me h2 {
-  margin-left: 20px;
-  width: 30%;
+ h2 {
+  margin-left: 15px;
+  width: 10%;
+  border-right: 5px solid #404518;
+  padding-right: 7px;
+
 }
 
 #about-me img {
@@ -96,15 +99,12 @@ section {
   gap: 20px;
   
 }
-#projects h2 {
-  width: 30%;
-  margin-left: 20px;
-}
 
 /* Made this 100% width to make it take up more space than the other pictures */
 #main-image img {
-  width: 100%;
+  width: 97%;
   position: relative;
+  margin: 15px;
 }
 
 #horiseon {
@@ -112,21 +112,28 @@ section {
 }
 
 #main-image {
-  width: 75%;
+  width: 60%;
 }
 
 /* This took me a long time to figure out. If you have any notes on an easier way please let me know */
 .text-block {
-  font-size: 16px;
+  font-size: 14px;
   background-color: var(--light-background);
   color: var(--dark-text);
   text-align: center;
   width: 50%;
+  max-height: 75px;
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   left: 5%;
 }
 
+.text-block h4 {
+  margin: 4px;
+}
+.text-block p{
+  margin: 6px 0px;
+}
 .secondary-images {
   display: flex;
   flex-wrap: wrap;
@@ -140,6 +147,7 @@ section {
   width: 40%;
   margin: auto;
   padding: 10px;
+  position: relative;
 }
 
 #contact-me {
@@ -158,20 +166,43 @@ section {
 #contact-me ul li a {
   text-decoration: none;
   color: white;
-  font-size: 20px;;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 768px) {
-  nav {
+  header {
     display: flex;
    flex-direction: column;
+   align-items: center;
   }
- 
+
+  #contact-me {
+    flex-direction: column;
+  }
+
+  #contact-me ul {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .main-image {
     width: 100%;
   }
+
   .secondary-image {
     width: 100%
   }
+}
 
+@media screen and (max-width: 450px) {
+  .text-block {
+    display: none;
+  }
+}
+@media screen and (max-width: 530px) {
+  #secondary-image .text-block {
+    display: none;
+  }
 }

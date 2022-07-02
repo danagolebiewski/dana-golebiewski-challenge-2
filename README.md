@@ -12,6 +12,8 @@ HTML and CSS
 
 ## Link to final version 
 
-[Site Link](https://danagolebiewski.github.io/challenge-1/)
+[Site Link](https://danagolebiewski.github.io/dana-golebiewski-challenge-2//)
+
+## Website Preview
 
 ![Website Preview](assets/images/website-preview.png)
