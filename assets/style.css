@@ -1,3 +1,4 @@
+/* I'm not sold on the colors and I'm sure I will change them at some point' */
 :root {
   --dark-text: #404518;
   --light-background:#e9cece;
@@ -18,6 +19,8 @@ header {
 h1 {
   display: inline-block;
 }
+
+/* Top navigation for about me, projects, and contact */
 header nav {
   padding-top: 0px;
   margin-right: 0px;
@@ -26,12 +29,12 @@ header nav {
   font-size: 20px;
   box-sizing: border-box;
 }
+
 header nav ul li {
   display: flex;
   justify-content: space-between;
   list-style: none;
   margin: 25px;
-
 }
 
 header nav ul li a {
@@ -46,6 +49,7 @@ ul {
   margin: 0;
 }
 
+/* This photo is of Buffalo, NY. My home town. */
 .hero {
   background-image: url("images/buffalo-skyline-along-the-banks-of-lake-erie-denis-tangney-jr.jpeg");
   background-size: cover;
@@ -62,19 +66,27 @@ section {
 #about-me {
   background-color: var(--dark-pink);
   color: white;
-}
-
-#content-container {
   display: flex;
-}
-#about-me img {
-  width: 15%;
-  margin-right: 10px;
+  padding: 2em;
 }
 
+#about-me h2 {
+  margin-left: 20px;
+  width: 30%;
+}
+
+#about-me img {
+  width: 150px;
+  margin: 0 15px 0 15px;
+  float: left;
+  height: auto;
+}
+
+/* Project section with placeholders to fill in when they are completed */
 #projects {
   background-color: var(--light-background);
   color: var(--dark-text);
+  display: flex;
 }
 
 #image-container {
@@ -82,22 +94,52 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  
+}
+#projects h2 {
+  width: 30%;
+  margin-left: 20px;
 }
 
+/* Made this 100% width to make it take up more space than the other pictures */
 #main-image img {
   width: 100%;
+  position: relative;
+}
+
+#horiseon {
+  position: relative;
 }
 
 #main-image {
   width: 75%;
 }
 
+/* This took me a long time to figure out. If you have any notes on an easier way please let me know */
+.text-block {
+  font-size: 16px;
+  background-color: var(--light-background);
+  color: var(--dark-text);
+  text-align: center;
+  width: 50%;
+  position: absolute;
+  bottom: 20px;
+  left: 5%;
+}
+
+.secondary-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
 #secondary-image img {
   width: 100%;
 }
 
 #secondary-image {
-  width: 30%;
+  width: 40%;
+  margin: auto;
+  padding: 10px;
 }
 
 #contact-me {
@@ -120,10 +162,16 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+   flex-direction: column;
+  }
+ 
   .main-image {
     width: 100%;
   }
   .secondary-image {
     width: 100%
   }
+
 }
