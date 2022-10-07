@@ -1,9 +1,9 @@
 /* I'm not sold on the colors and I'm sure I will change them at some point' */
 :root {
-  --dark-text: #404518;
-  --light-background:#e9cece;
-  --light-green: #b2ba97;
-  --dark-pink:#9f8270;
+  --dark-text: #1f2839;
+  --light-background:#f5f5ef;
+  --light-green: #b69d74;
+  --dark-pink:#1f2839;
 }
 body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -57,7 +57,7 @@ ul {
   background-position-y: 17%;
   height: 150px;
   margin: 1%;
-  border: solid #404518;
+  border: solid #b69d74;
 }
 section {
   padding: 1%;
@@ -73,7 +73,7 @@ section {
  h2 {
   margin-left: 15px;
   width: 10%;
-  border-right: 5px solid #404518;
+  border-right: 5px solid #b69d74;
   padding-right: 7px;
   display: flex;
   justify-content: end;
@@ -233,7 +233,7 @@ section {
  h2 {
   display: flex;
   flex-direction: column;
-  border-bottom: 5px solid #404518;
+  border-bottom: 5px solid #b69d74;
   border-right: none;
 }
 }
